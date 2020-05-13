@@ -1,0 +1,24 @@
+{
+  "name": "lambda-apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api:create": "tsc && claudia create --name lambda-apollo --region us-east-1 --api-module bin/index --version development --env dev",
+    "api:deploy": "claudia update --config claudia.json --version development",
+    "api:destroy": "claudia destroy --config claudia.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-agnostic": "^0.0.2",
+    "apollo-server-lambda": "^2.13.1",
+    "claudia-api-builder": "^4.1.2",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {
+    "claudia": "^5.12.0",
+    "typescript": "^3.9.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "lambda-apollo-executor",
+    "name": "lambda-apollo",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "jcotugm0d0",
+    "module": "bin/index"
+  }
+}
